@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="head_title">Business Analyst Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">BA<span class="accent">.</span>Port</a>
+
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#education" data-i18n="nav_education">Education</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <!-- Theme Switcher -->
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button id="lang-btn" class="lang-btn">EN <i class="fa-solid fa-chevron-down"></i></button>
+                    <ul class="lang-dropdown">
+                        <li><a href="#" data-lang="en">EN</a></li>
+                        <li><a href="#" data-lang="uz">UZ</a></li>
+                        <li><a href="#" data-lang="ru">RU</a></li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn icon-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-anim"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="greeting" data-i18n="hero_greeting">Hello, I'm</p>
+                <h1 class="name" data-i18n="hero_name">Adxamov Ziyodbek</h1>
+                <h2 class="title">
+                    <span class="typing-text" data-i18n="hero_title">Business Analyst</span><span
+                        class="cursor">|</span>
+                </h2>
+                <p class="description" data-i18n="hero_desc">
+                    Passionate about leveraging data and technology to drive business innovation.
+                    Currently studying at PDP University.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_contact">Contact Me</a>
+                    <div class="social-links">
+                        <a href="#" class="icon-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://t.me/Ziyodbek06" target="_blank" class="icon-link"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#" class="icon-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icon-link"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="glass-orb"></div>
+                <img src="unknown_profile.png" alt="Profile"
+                    class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="nav_about">About Me</h2>
+                <div class="about-card glass-card">
+                    <p data-i18n="about_text_1">I am a highly motivated student at PDP University, deeply passionate
+                        about Business Analysis, Data Analytics, and modern Technology.</p>
+                    <p data-i18n="about_text_2">My goal is to bridge the gap between business objectives and technical
+                        implementations to create value and efficiency.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="nav_skills">Skills</h2>
+                <div class="skills-grid">
+                    <!-- Cards will be dynamically structured or statically added here -->
+                    <div class="skill-card"><i class="fa-solid fa-database"></i> <span>SQL</span></div>
+                    <div class="skill-card"><i class="fa-solid fa-file-excel"></i> <span>Excel</span></div>
+                    <div class="skill-card"><i class="fa-solid fa-chart-pie"></i> <span>Power BI</span></div>
+                    <div class="skill-card"><i class="fa-solid fa-chart-column"></i> <span>Tableau</span></div>
+                    <div class="skill-card"><i class="fa-brands fa-jira"></i> <span>Jira</span></div>
+                    <div class="skill-card"><i class="fa-brands fa-figma"></i> <span>Figma</span></div>
+                    <div class="skill-card"><i class="fa-solid fa-briefcase"></i> <span data-i18n="skill_ba">Business
+                            Analysis</span></div>
+                    <div class="skill-card"><i class="fa-solid fa-chart-line"></i> <span data-i18n="skill_dv">Data
+                            Visualization</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="nav_projects">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card glass-card">
+                        <h3 data-i18n="proj_1_title">Sales Dashboard Analysis</h3>
+                        <p data-i18n="proj_1_desc">Developed a comprehensive dashboard to track KPI metrics and identify
+                            sales trends.</p>
+                    </div>
+                    <div class="project-card glass-card">
+                        <h3 data-i18n="proj_2_title">Customer Retention Analysis</h3>
+                        <p data-i18n="proj_2_desc">Analyzed customer data to recommend strategies that improved
+                            retention rates.</p>
+                    </div>
+                    <div class="project-card glass-card">
+                        <h3 data-i18n="proj_3_title">Business Process Optimization</h3>
+                        <p data-i18n="proj_3_desc">Evaluated internal processes and proposed workflow enhancements.</p>
+                    </div>
+                    <div class="project-card glass-card">
+                        <h3 data-i18n="proj_4_title">Data Reporting System</h3>
+                        <p data-i18n="proj_4_desc">Automated weekly reporting pipelines saving significant manual
+                            effort.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="nav_education">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-dot"></div>
+                        <h3 data-i18n="edu_pdp_title">PDP University</h3>
+                        <span class="timeline-date" data-i18n="edu_pdp_date">Present</span>
+                        <p data-i18n="edu_pdp_desc">Student focusing on modern business and technology paradigms, data
+                            analysis and analytics optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="nav_contact">Contact</h2>
+                <div class="contact-wrapper glass-card">
+                    <div class="contact-info">
+                        <h3 data-i18n="contact_heading">Let's Connect</h3>
+                        <p data-i18n="contact_subheading">Have an opportunity or a project to discuss? Feel free to
+                            reach out.</p>
+                        <div class="contact-methods">
+                            <a href="mailto:adxamovziyodbek14@gmail.com" class="contact-method">
+                                <i class="fa-solid fa-envelope"></i> adxamovziyodbek14@gmail.com
+                            </a>
+                            <a href="https://t.me/Ziyodbek06" target="_blank" class="contact-method">
+                                <i class="fa-brands fa-telegram"></i> @Ziyodbek06
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required data-i18n-placeholder="contact_ph_name">
+                        <input type="email" placeholder="Your Email" required data-i18n-placeholder="contact_ph_email">
+                        <textarea rows="5" placeholder="Your Message" required
+                            data-i18n-placeholder="contact_ph_msg"></textarea>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact_btn_send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 <span data-i18n="footer_text">Adxamov Ziyodbek. All rights reserved.</span></p>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://t.me/Ziyodbek06" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
